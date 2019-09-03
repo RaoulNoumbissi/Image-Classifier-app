@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="classifier.css">
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+  <div class="header"><h1>Machine Learning Classification Model</h1></div>
+    <div class="container">
+    <div class="page">
+
+      <!--div class="sidebar"></div-->
+      <div class="content"> <!--img src="my_profile.jpeg" alt="A human face" class="image"-->
+
+        <!-- Add an image that we will use to test -->
+        <!--img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/-->
+        <!-- Load index.js after the content of the page -->
+        <video autoplay playsinline muted id="webcam" width="224" height="224" class="vid"></video>
+
+       <p>This app uses transfer learning to classify image data from a webcam. </p>
+       <p>Train your model by placing your webcam images into one of A, B or C image categories. Hold an image in front of the camera and press one of the class buttons below.</p>
+       <p>Make predictions after your model is trained. Hold your test image in front of the webcam and see which class the model thinks your image belongs to and its  probability. </p>
+       <p>Check out this <a href='https://www.youtube.com/watch?v=FTr3n7uBIuE&t=906s'>link</a> for an explanation on image classification.</p>
+       <button id="class-a">Add A</button>
+       <button id="class-b">Add B</button>
+       <button id="class-c">Add C</button>
+
+       <script src="index.js"></script>
+       <!--a class="button_spec" href="images0.html">Upload</a-->
+      </div>
+
+      </div>
+      </div>
+      <div class="footer">
+       <div class="square">
+        <div id="console" class="cons"></div>
+       </div>
+
+
+  </div>
+
+      </div>
+  </body>
+</html>
